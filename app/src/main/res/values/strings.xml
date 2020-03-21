@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Oue_Project</string>
+    <string name="FSM">Federated States of Micronesia</string>
+    <string name="Marshalls">Marshall Islands</string>
+    <string name="Solomon">Solomon Islands</string>
+    <string name="French">French Polynesia</string>
+    <string name="Tonga">Tonga</string>
+</resources>

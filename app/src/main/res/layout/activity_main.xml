@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorHeader">
+    <TextView
+        android:id="@+id/totalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/ColorHeader"
+        android:text="0"
+        android:textSize="25dp"
+        android:textColor="@color/ColorWhite"/>
+
+    <TextView
+        android:textSize="25dp"
+        android:text=" TOTAL POINTS"
+        android:textColor="@color/ColorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/totalPoints"
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/totalPoints">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/oceania"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:tag="@string/FSM"
+                android:id="@+id/fsm"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fsm_flag"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="120dp"
+                />
+
+            <ImageView
+                android:tag="@string/Marshalls"
+                android:id="@+id/marshalls"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/marshall_flag"
+                android:layout_alignStart="@+id/fsm"
+                android:layout_marginTop="125dp"
+                android:layout_marginLeft="250dp"
+                />
+            <ImageView
+                android:tag="@string/Solomon"
+                android:id="@+id/solomon"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/solomon_flag"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="220dp"/>
+
+            <ImageView
+                android:tag="@string/French"
+                android:id="@+id/FrenchPoly"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/french_flag"
+                android:layout_marginLeft="500dp"
+                android:layout_marginTop="310dp"/>
+
+            <ImageView
+                android:tag="@string/Tonga"
+                android:id="@+id/tonga"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tonga_flag"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="285dp"/>
+
+
+        </FrameLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
